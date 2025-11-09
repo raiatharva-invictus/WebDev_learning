@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        *{
+            margin : 0;
+            padding: 0;
+        }
+        .box{
+            background-color: cyan;
+        }
+        .box1{
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid green;
+            color: red;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid green;
+            color: red;
+            height: 200px;
+            box-sizing: border-box;
+            color: red;
+        }
+        /* margin-collapse concept is that when two margin collapse the max one is applied in between */
+    </style>
+</head>
+<body>
+    <div class="box box1">This is box1</div>
+    <div class="box box2">This is box2</div>
+</body>
+</html>

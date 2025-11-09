@@ -1,0 +1,12 @@
+1 css is a way to style web pages as it name cascading style sheets, it helps webpages look better
+2 css is applied in three ways to our html code , inline, internal, external
+3 css use selector to target specific class(.class1, .class2,etc), id(#id1, #id2), or tag(such as body, div, span, p , etc)
+
+code :
+
+    <style>
+        div, span{
+            color : red;
+            background-color: yellow;
+        }
+    </style>

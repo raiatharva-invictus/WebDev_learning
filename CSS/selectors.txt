@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color : red;
+        }
+        /* Class Selector */
+        .box{
+            padding:5px;
+        }
+        /* ID Selector */
+        #boxid{
+            color: cyan;
+        }
+        /* Child Selector */
+        /* imp info about child selectors is that if it is directly under div but if it is not then this doesn't apply using the next method you can do it */
+        div > p{
+            background-color: maroon;
+        }
+        /* Descendent Selector */
+        div p{
+            color: limegreen;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color:brown;    
+        }
+        a:active{
+            background-color: grey;
+        }
+        a:hover{
+            background-color: green;
+        }
+
+        /* the below first-child is telling that wherever <element> is first child of the its parent their this styling should apply */
+        p:first-child{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>This is first</p>
+        <p>This is Second</p>
+    </main>
+    <div class="box box1">This is box1
+        <p>This is a para which is child of div</p>
+    </div>
+    <div class="box box2">This is box2
+        <main>
+            <p>This is under div/main</p>
+        </main>
+    </div>
+    <a href="https://www.facebook.com/">GOOGLE</a>
+
+</body>
+</html>
