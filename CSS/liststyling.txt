@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    nav ul li{
+      /* display: list-item; // by default for li display is list-item */
+      /* display: block; */
+      /* list-style: devanagari; */
+      /* list-style: none; */
+      background-color: lightcoral;
+      /* list-style-position: inside; */
+      border: 2px solid black;
+      /* list-style-image: url(../list.jpg); */
+      /* list-style-type: "😊"; // used win + . to use emojipicker */
+
+      /* we can also using single tag define(do check the order you are writing these) -> list-style/list-style-type(for emoji etc), list-style-position,list-style-image */
+      /* list-style: "😊" inside ; */
+      /* list-style: url(../list.jpg) inside; */
+      /* list-style: disc inside; */
+
+      list-style-type: "😊";
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  
+</body>
+</html>
