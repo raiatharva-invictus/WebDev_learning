@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    .box{
+      border: 2px solid red;
+      padding: 20px;
+      margin: 10px;
+      /* display: inline; */
+      /* display: inline-block; */
+      
+    }
+    .box1{
+      /* display: none; */
+      /* visibility: hidden; */
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+    <h5>Following are some display property we use in css</h5>
+    <ol>
+      <li>inline</li>
+      <li>inline-block</li>
+      <li>block</li>
+      <li>none</li>
+      <li>flex</li>
+      <li>inline-flex</li>
+      <li>grid</li>
+      <li>inline-grid</li>
+    </ol>
+  </div>
+  <!-- // example element used -->
+  <!-- <div class="box box1">
+    This is a box
+  </div>
+  <div class="box">
+    Another box
+  </div>
+  <span>Hello this is a span</span>
+  <span>This is another span</span> -->
+</body>
+</html>

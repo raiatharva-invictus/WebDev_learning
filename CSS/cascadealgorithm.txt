@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* order of specifity is : inline > id selector > class or attribute selector > element selector  > universal selector */
+
+    /* their is one more type of selector that is attribute selector that is shown here by data-x='a' */
+    .yellow{
+      color: yellow;
+    }
+    .cred{
+      color: brown !important;
+    }
+    .cblue{
+      color: blue;
+    }
+    [data-x='a']{
+      background-color: cyan;
+    }
+
+    /* specificity calculation is basically we assign selectors points such as element is given 1 point , class and attribute selectors is given 10 points, id is given 100 points , inline style is given 1000 points, important is given 10000 points and then we add them to calculate the specificity of the simple or complex(more than one) selectors*/
+
+    /* quiz  */
+    /* the specificity of this is 1 + 10 + 10 + 10 + 10 = 41 */
+    /* a.red.rohan-class[href]:hover{
+
+    } */
+
+  </style>
+</head>
+<body>
+  <div>
+    <h1 class="yellow cred cblue" data-x="a" style="color:red">Let's discuss CSS Specificity.</h1>
+    <ol>
+      <li>position and order of appearance</li>
+      <li>Specificity</li>
+      <li>Origin <p>This tells from where the styles have been applied whether by browser(user agent stylesheet) or your own</p></li>
+      <li>Importance <p>This overrides the inline order and comes at the topmost priority if applied like you can see in the style tags written by !important</p></li>
+    </ol>
+  </div>
+</body>
+</html>

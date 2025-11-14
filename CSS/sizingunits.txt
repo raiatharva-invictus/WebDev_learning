@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      font-size: 12px;
+    }
+    .box{
+      border: 2px solid red;
+      background-color: aquamarine;
+      box-sizing: border-box;
+      /* width: 1536px; */
+      width: 80vw;
+      height: 10vh;
+      margin: auto;
+      
+    }
+    .container{
+      border: 2px solid red;
+      background-color: aquamarine;
+      box-sizing: border-box;
+      /* width: 1536px; */
+      width: 80vw;
+      /* height: 80vh; */
+      margin: 23px auto;
+      font-size: 16px;
+      padding: 20px;
+      /* min-width: 80vw; */
+      min-height: 80vh;
+    }
+    .container  > p{
+      background-color: yellow;
+      width: 50%;
+      border: 2px solid red;
+      /* font-size: 1.2em;
+      font-size: 2rem; */
+    }
+    .container  > div{
+      background-color: yellow;
+      width: 50%;
+      border: 2px solid red;
+      /* font-size: 1.2em;
+      font-size: 2rem; */
+    }
+    .cont{
+      border: 2px solid red;
+      background-color: yellow;
+      font-size: 23px;
+      /* width: 100vmin; */
+      /* width: 100vmax; */
+      width: 80vw;
+      margin: 23px auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    This is a simple box made using div.
+  </div>
+  <div class="container">
+    <h5>Following are some sizing units used in css</h5>
+    <ol>
+      <li>px</li>
+      <li>vw, vh</li>
+      <li>em, rem</li>
+      <li>vmin, vmax</li>
+      <li>their are more but general ones are listed above</li>
+    </ol>
+    <p>This is a para to understand em and rem</p>
+
+    <div>
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </div>
+  </div>
+  <div class="cont">
+    This is a container to understand vmin and vmax.
+  </div>
+
+
+</body>
+</html>
