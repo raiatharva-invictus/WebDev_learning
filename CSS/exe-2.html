@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: azure;
+      }
+      .card {
+        height: 410px;
+        width: 289px;
+        margin: auto;
+        margin-top: 30px;
+        padding: 5px;
+        border: 2px solid rgb(232, 230, 230);
+        background-color: white;
+        border-radius: 15px;
+      }
+      .card img {
+        height: 180px;
+        width: 289px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    .card ul li {
+        list-style: none;
+        display: inline-block;
+        border-radius: 20px;
+        padding: 3px;
+        font-size: 10px;
+        margin: 5px;
+        color: rgb(210, 207, 207);
+        border: 2px solid rgb(239, 238, 238);
+    }
+    .card div p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: grey;
+        margin: 10px;
+    }
+    .card div h1{
+        padding: 0 10px 0 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .card div a{
+        align-self: center; 
+        text-decoration: none;
+        background-color: rgb(203, 234, 246);
+        padding: 10px;
+        border-radius: 30px;
+        
+    }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="../lake.webp" alt="" />
+      <ul>
+        <li>Nature</li>
+        <li>Lake</li>
+      </ul>
+      <div class="tex">
+        <h1>This is Lake</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quasi impedit ipsum voluptate doloribus at minus accusantium, unde dolorum culpa .</p>
+        <center><a href="#">Read More</a></center>
+        
+      </div>
+    </div>
+  </body>
 </html>
