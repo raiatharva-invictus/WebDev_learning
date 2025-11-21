@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS media queries</title>
+  <style>
+    body{
+      background-color: cyan;
+    }
+    /*
+    Syntax of media query:
+    @media not|only screen(we can write here screen,print,all,etc) and (expression){
+      CSS code
+      } 
+      */
+      @media screen and (orientation: portrait){
+        body{
+          border: 2px solid green;
+        }
+      }
+      /* in most of the cases we use the below media query */
+    @media only screen and (max-width: 455px){
+      /* similaly i can call it for min-width or any other expression */
+      body{
+        background-color: crimson;
+      }
+      .boxes{
+        flex-direction: column;
+      }
+    }
+    .boxes{
+      display: flex;
+    }
+    .box{
+      height: 300px;
+      width: 300px;
+      background-color: steelblue;
+      padding: 3px;
+      margin: 3px;
+    }
+  </style>
+</head>
+<body>
+  hello there
+
+  <div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>

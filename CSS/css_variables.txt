@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root{
+      --color : red;
+      --seccolor: rgb(238, 160, 175);
+      --defpad : 20px;
+      /* you can store much more type of properties using css variables like you can store urls, padding, opacity, numbers,etc. */
+      
+    }
+    *{
+       margin: 0;
+       padding: 0;
+    }
+    .nav{
+      background-color: var(--color);
+      padding:var(--defpad);
+    }
+    ul{
+      display: flex;
+    }
+    ul li{
+      padding: 24px;
+      list-style: none;
+      border: 2px solid var(--seccolor);
+    }
+    ul li:first-child{
+      --color:  rgb(200, 239, 152);
+      /* the second argument given is called fallback variable in case of --color var is not present */
+      background-color: var(--color, blue);
+      list-style: none;
+    }
+    .container{
+      background-color: var(--seccolor);
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li>Home</li>
+      <li>Aout Us</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="container">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, soluta. Asperiores unde in rerum saepe! Sit porro fugit ipsam! Consequatur officiis eveniet, ullam quae labore illo nostrum blanditiis culpa doloribus placeat sint nesciunt praesentium? Suscipit exercitationem ratione inventore voluptatibus earum reprehenderit accusantium nesciunt dolor hic minima?
+    </p>
+  </div>
+</body>
+</html>
