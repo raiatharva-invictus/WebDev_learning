@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Float & Clear</title>
+  <title>CSS Grid</title>
   <style>
-    .cards{
-      border: 2px solid purple;
-       /* to fix the overflow of image from the cards container we use below property of display flow-root */
-      display: flow-root;
+    we apply display grid in the parent container
+    some terminolgies we use are grid line, grid cell, grid track, grid area, grid template row, grid template columns
+    .container{
+      border: 2px solid yellow;
+      display: grid;
+      grid-template-columns: 120px 100px;
+
     }
-    .card{
-      border: 2px solid red;
-    }
-    img{
-      float:left;
-      float:right;
+    .item{
+      background-color: lightcoral;
+      width: 55px;
+      height: 55px;
+      border: 2px solid black;
     }
   </style>
 </head>
 <body>
-  <div class="cards">
-    <img src="../lake.webp" alt="" width="220">
-    <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quod ab reprehenderit obcaecati labore quis rem. Libero perspiciatis unde reiciendis culpa possimus delectus vitae corporis non? Ipsum odit suscipit repellendus iusto dolor, mollitia labore eius exercitationem laboriosam quam nostrum est recusandae ratione nisi dolorum corporis delectus repudiandae molestias quod vel velit iure inventore debitis!</div>
-    <div class="card">card 2</div>
-    <div class="card">card 3</div>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
   </div>
 </body>
 </html>

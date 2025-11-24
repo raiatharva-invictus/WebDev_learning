@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS Selectors</title>
+    <style>
+      /* if .box is a first child of its parent */
+      /* .box:first-child{
+      background-color: red;
+    } */
+      /* .box::first-line{
+      color: red;
+    } */
+
+      /* another way to use universal selectors */
+      /* .boxes *{
+      color: blue;
+    } */
+
+      /* attribute selector */
+      /* [data-color="primary"]{
+      padding: 25px;
+    } */
+      /* selector grouping */
+      /* p, [data-color="primary"]{
+    border: 2px solid black;
+    color: blue;
+    } */
+
+      /* nth selectors */
+      /* .box:nth-child(even) {
+        color: blue;
+      }
+      .box:nth-last-child(2){
+        color: red;
+      } */
+
+
+      /* before and after pseudo-elements */
+      /* .boxes::before{
+        content: "Hello, this is before Atharva";
+      }
+      .boxes::after{
+        content: "Hello, this is after Atharva";
+      } */
+
+      /* ::selection this can be applied to class,etc and also like this to whole page */
+      /* .boxes::selection{
+        color: cyan;
+        background-color: black;
+      } */
+       /* even like this we can use it */
+      /* ::selection{
+        color: cyan;
+        background-color: black;
+      } */
+
+      .box::first-letter{
+        font-size: 25px;
+        color: bisque;
+      }
+      input::placeholder{
+        color: aqua;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">Just a box</div>
+      <div class="box">Hey I am also a box</div>
+      <div class="box" data-color="primary">Hey I am too a box</div>
+      <input type="text" placeholder="Type your name here">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odit
+        ipsa quos.
+      </p>
+    </div>
+  </body>
+</html>
