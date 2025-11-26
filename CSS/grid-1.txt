@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    /* we apply display grid in the parent container
+    some terminolgies we use are grid line, grid cell, grid track, grid area, grid template row, grid template columns 
+    
+    */
+    .container{
+      width: 80vw;
+      height: 70vh;
+      border: 2px solid yellow;
+      display: grid;
+      /* grid-template-columns: 120px 100px; */
+      /* we can even name this columns and rows as shown below and use them in setting grid row and column of items */
+      /* grid-template-columns: [pehli]120px [doosri]100px [tesri];
+      grid-template-rows: 100px 100px 100px;
+      grid-template-rows: [pehlir]100px [doosrir]100px [tesrir]100px; */
+
+      /* // below is demostration of fr units this basically divides into fraction of width provided to container here it 80vw so it divides into three 1/3 of width we can set even something like 1fr 2fr 1fr // */
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      /* grid-template-columns: 1fr 2fr 1fr; */
+      /* we can use repeat to avoid writing multiple times the same config of rows or columns */
+      /* grid-template-columns: repeat(4, 1fr); */
+      /* use of minmax function */
+      /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+
+      /* // we can also set gap and separate row-gap, column-gap // */
+      /* gap: 10px; */
+      /* row-gap: 10px;
+      column-gap: 20px; */
+
+      /* // this sets items within the cellt they are in // */
+      align-items: center;
+      justify-items: center;
+
+
+      /* this sets the whole grid say we have made a 2 cross 2 or 3 * 2 grid assigning suitable templates then it will align and justify the whole grid in parent container */
+      justify-content: center;
+      align-content: center;
+      /* mixture of both align and jusitfy (content) is: */
+      place-content: center;
+
+
+    }
+    .item{
+      background-color: lightcoral;
+      width: 55px;
+      height: 55px;
+      border: 2px solid black;
+    }
+    /* Note : if you have not set the width & height of item it will take width and height of grid row & column after settign the display grid and template rows & columns */
+    .item1{
+      /* grid-column: 1/2;
+      grid-row: 1/2; */
+
+      /* we can below methods too to set it is same as above just end and start are in seprate properties instead of separate just by slash */
+      /* grid-row-start: ;
+      grid-row-end: ;
+      grid-column-start: ;
+      grid-column-end: ; */
+
+      /* align-self: end; */
+    }
+    .item4{
+      /* grid-column: 1/2;
+      grid-row: 1/2; */
+      /* using names to set grid row and column */
+      /* grid-column: pehli/doosri;
+      grid-column: pehli/tesri; */
+      /* grid-row: pehlir/tesrir; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item item4">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+</html>
