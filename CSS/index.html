@@ -3,61 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Transforms</title>
+    <title>Object-fit and Object-cover</title>
     <style>
-        *{
-            /* margin: 0;
-            padding: 0; */
-        }
-        .box{
-            width: 60px;
-            height: 60px;
-            background-color: beige;
-            border: 2px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* transform: rotate(45deg); */
-            /*transform: rotate(0.5turn); /* 1turn equals 360 degree*/
-            /* transform: rotateX(45deg);
-            transform: rotateY(45deg);
-            transform: rotateZ(45deg); */
-
-            /* transform: scale(1.2); */
-            /* similarly we have axis based scaling too */
-            /* transform: scaleX(1.2);
-            transform: scaleY(1.2);
-            transform: scaleZ(1.2); */
-            /* transform: scale3d(); */
-
-            /* transform: skew(5deg); */
-            /* transform: skewY(5deg); */
-            /* transform: skewX(5deg); */
-            /* there is no skewZ() their */
-
-            /* transform: translateX(34px); */
-            /* transform: translateX(34%); */
-            /* transform: translate(100%); */
-
-            /* transform: translateX(34px) skewX(45deg) translateY(100px); */
-            /* transform: translateX(45%) skewX(45deg) translateY(100%); */
-            /* transform: translateX(45%) skewX(45deg) translateY(-100%); */
-
-            transform-origin: 10% 20%;
-            
-        }
         .container{
-            border: 2px solid rgb(109, 109, 5) ;
-            height: 70vh;
-            width: 70vw;
+            background-color: azure;
+            border: 2px solid grey;
+            height: 700px;
+            width: 800px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+
+            /*it does not care what parent has as widht or height but rather what is that of image like here it 400px,400px respectively*/
+            object-fit: cover;
+            /* object-fit: contain; */
+
+            object-position: top right;
         }
     </style>
 </head>
 <body>
-        <div class="container">
-            <div class="box">
-                Box
-            </div>
-        </div>
+    <div class="container">
+        <img src="../lake.webp" alt="photo">
+    </div>
+    
 </body>
 </html>

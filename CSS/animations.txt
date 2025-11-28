@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: bisque;
+            width: 50vw;
+            height: 50vh;
+        }
+        .box{
+            background-color: cyan;
+            width: 3vw;
+            height: 5vh;
+            /*
+            animation-name: atharvaAnimation;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(1,-0.39, 0, 1.23);/*this is basically custom function using developer tools*/
+            /* animation-iteration-count: 3;we can also do it infinite */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused;This can pause or run animation and further properties */
+            /* animation-fill-mode: forwards; */
+            /* animation: atharvaAnimation 3s ease-in-out 1s infinite forwards; */
+
+            /* applying multiple animations */
+            animation: atharvaAnimation 3s ease-in-out 1s infinite forwards, 
+                        atharva2animation 2s ease-in 1s infinite forwards;
+        }
+        @keyframes atharvaAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(500px);
+            }
+        }
+        @keyframes atharva2animation {
+            0%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(-100deg);
+            }
+            100%{
+                transform: rotate(260deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+    
+</body>
+</html>

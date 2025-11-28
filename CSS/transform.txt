@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(45deg); */
+            /*transform: rotate(0.5turn); /* 1turn equals 360 degree*/
+            /* transform: rotateX(45deg);
+            transform: rotateY(45deg);
+            transform: rotateZ(45deg); */
+
+            /* transform: scale(1.2); */
+            /* similarly we have axis based scaling too */
+            /* transform: scaleX(1.2);
+            transform: scaleY(1.2);
+            transform: scaleZ(1.2); */
+            /* transform: scale3d(); */
+
+            /* transform: skew(5deg); */
+            /* transform: skewY(5deg); */
+            /* transform: skewX(5deg); */
+            /* there is no skewZ() their */
+
+            /* transform: translateX(34px); */
+            /* transform: translateX(34%); */
+            /* transform: translate(100%); */
+
+            /* transform: translateX(34px) skewX(45deg) translateY(100px); */
+            /* transform: translateX(45%) skewX(45deg) translateY(100%); */
+            /* transform: translateX(45%) skewX(45deg) translateY(-100%); */
+
+            transform-origin: 10% 20%;
+            
+        }
+        .container{
+            border: 2px solid rgb(109, 109, 5) ;
+            height: 70vh;
+            width: 70vw;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">
+                Box
+            </div>
+        </div>
+</body>
+</html>
