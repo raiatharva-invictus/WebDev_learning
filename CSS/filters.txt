@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <style>
+        .img1{
+            filter: brightness(100%);
+
+            /* like transform,animation,etc we can add more properties in a single line as below */
+            /* filter: brightness(100%) contrast(0.6); */
+        }
+        .img2{
+            filter: contrast(1);
+            filter: sepia(60%);
+        }
+        .img3{
+            /* filter: grayscale(100%); */
+            /* filter: invert(1); */
+            filter: opacity(0.6);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://imgs.search.brave.com/G2gLwtK3jNbOFSJPZwCTpduSkf5h676Kumbzn4UOedk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyNC8w/NC8wOS8wNC8xNS9s/YWtlLTg2ODQ5NjRf/NjQwLnBuZw" alt="" class="img1">
+    <img src="https://imgs.search.brave.com/rf-ZWbcbRKEVDpKtr2Ue-j0QPs81Yw-U__L5_Py1344/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vcGljanVt/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9wZXJzb24taW4t/d2ludGVyLWdsb3Zl/cy1ob2xkaW5nLWhv/dC1kcmluay1pbi1u/YXR1cmUtZnJlZS1p/bWFnZS5qcGVnP3c9/NjAwJnF1YWxpdHk9/ODA" alt="" class="img2">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Tommy_Shelby.jpg?20230713002727" alt="" class="img3">
+</body>
+</html>
