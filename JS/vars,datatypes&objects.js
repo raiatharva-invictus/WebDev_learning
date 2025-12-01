@@ -28,4 +28,20 @@
 //////////////////////////////////////////////////////////////////////////////
 
 // JS has 7 primitive datatypes namely : null, Number, string, Symbol, undefined, Boolean, BigInt
+let x = "Atharva Rai";
+let y = 24;
+let z = 3.35;
+const p = true;
+let q = null; // when we look a typof q it shows object not null due to a mistake done long time ago which couldn't be changed due to large codebase relying of it
+let r = undefined;
+console.log(x,y,z,p,q,r)
+console.log( typeof x, typeof y, typeof z, typeof p, typeof q, typeof r)
 
+let t = {
+    name : "Atharva",
+    "job role" : "Senio SDE",
+    "is_engineer" : true,   
+}
+console.log(t);
+t.salary = "500crores";
+console.log(t);
