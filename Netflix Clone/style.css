@@ -4,15 +4,19 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
 }
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 .main {
-    object-fit: cover;
-    background-image: url(assets/img/mainbg1.jpg);
+    background-image: url(assets/img/image.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
@@ -81,7 +85,7 @@ select {
     font-size: 20px;
 }
 
-.maintext h4 {
+.maintext h3 {
     text-align: center;
     font-family: "Martel Sans", sans-serif;
     font-weight: 400;
@@ -89,7 +93,6 @@ select {
 }
 
 .btn{
-    /* padding: 6px; */
     color: white;
     font-weight: bolder;
     border: 2px solid red;
@@ -109,7 +112,6 @@ select {
     border-radius: 3px;
 }
 form input{
-    padding: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid gray;
     padding: 9px 40px 9px 9px ;
@@ -132,6 +134,25 @@ form input{
     display: flex;
     flex-direction: row;
     gap: 5px;
+}
+@media screen and (max-width:800px){
+    .getstarted{
+        font-size: 10px;
+        padding: 1px 5px;
+    }
+    form input{
+        padding: 3px 20px 3px 3px ;
+
+    }
+    .maintext h1{
+        font-size: 30px;
+    }
+    .maintext p{
+        font-size: 15px;
+    }
+    .maintext h1{
+        font-size: 30px;
+    }
 }
 .separator{
     background-color: rgb(38, 38, 38);
@@ -170,6 +191,7 @@ form input{
     position: relative;
     top:-198px;
     right: -9px;
+    /* max-width: 100%; */
 }
 .faq{
     background-color: black;
