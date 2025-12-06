@@ -19,6 +19,8 @@
       /* grid-template-columns: [pehli]120px [doosri]100px [tesri];
       grid-template-rows: 100px 100px 100px;
       grid-template-rows: [pehlir]100px [doosrir]100px [tesrir]100px; */
+      /*in case we create column or rows that are not their say we only had 4 cols and 4 rows created and assigned a item 5th ot 6th row or column it will be assigned auto size and the existing col which came in between and are unused ar given 0px sze  to fix this we give grid-auto-colums/rows respectively*/
+      /*grid-auto-flow:row is bydefualt but we can also give it column*/
 
       /* // below is demostration of fr units this basically divides into fraction of width provided to container here it 80vw so it divides into three 1/3 of width we can set even something like 1fr 2fr 1fr // */
       /* grid-template-columns: 1fr 1fr 1fr; */
