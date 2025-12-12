@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 const fs = require("fs")
+const blog = require("./routes/blog")
 
 // app.use(express.static("public")) // this is a middleware which runs before the route handlers. It checks if the requested path matches any file in the "public" folder - if yes, serves it directly; if no, passes the request to next route handler.
 
@@ -26,6 +27,12 @@ app.use((req,res,next)=>{
 })
 
 
+
+//their are various types of middleware
+// application level middleware, router-level middleware, error-handling middleware, built-in middleware(express.static. exprss.json,express,urlencoded), third-party middleware(middleware someone has made for us)
+
+//router-level middleware
+app.use("/blog", blog);
 
 app.get('/', (req, res) => { 
 //   res.send('Hello World!')
