@@ -1,0 +1,4 @@
+when we create a react app we have a folder structure in which public has all the files that is visible like if e have a txt file we can access it by just localhost:3000/some.txt , etc just like how we can access a favicon by just doing site-name/favicon.ico
+
+
+return basically returns one div only so if we try to give it two it gives error(which i got two times hahaha)
