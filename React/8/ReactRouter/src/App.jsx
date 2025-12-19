@@ -4,6 +4,7 @@ import Home from './components/Home'
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './components/About'
+import User from './components/User'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -20,6 +21,10 @@ function App() {
     {
       path : "/about",
       element : <><Navbar/><About/></>
+    },
+    {
+      path : "/login/:username",
+      element : <User/>
     }
   ])
 
